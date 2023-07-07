@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enroll.css">
+    <title>Enrollment form</title>
+   
+</head>
+<body>
+    <div class="enroll">
+    <h1>Enrollment Form </h1></div>
+    <form id="enrollment-form" method="POST" action="submit_enrollment.php">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="full-name" id="full-name"required>
+        
+        <label for="email">Email Address</label>
+        <input type="text"name="email" id="email"required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+          <option value="">Select a course</option>
+          <option value="English Language">English Language</option>
+          <option value="Arabic Language">Arabic Language</option>
+          <option value="Nazra Quran Online Classes">Nazra Quran Online Classes</option>
+          <option value="B.A/MA Exam Preparation">B.A/MA Exam Preparation</option>
+        </select>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+    
+        <input type="submit" value="Submit">
+
+      
+    </form>
+    <script>
+        const form=document.getElementById("enrollment-form");
+        form.addEventListener("submit",(event)=>{
+            event.preventDefault();
+            alert("Form submitted successfully");
+            window.location.href="http://127.0.0.1:5500/index.html#Home";
+        })
+    </script>
+</body>
+</html>
