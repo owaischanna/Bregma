@@ -1,0 +1,330 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(images/abd.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  background: #8e6836;
+  height: 50px;
+  width: 100%;
+  padding: -42%;
+}
+
+.head h1 {
+  color: #000000cc;
+  font-size: 35px;
+  line-height: 40px;
+  padding: 10 15px;
+  font-weight: bold;
+  display: inline-block;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+  margin-top: -6vh;
+ 
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #3aa0ef;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 962px) {
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #85618ed6;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 30px;
+    color: #000000;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+    display:block;
+  }
+ #check:hover{
+  display: none;
+ }
+}
+
+.banner {
+  text-align: center;
+  padding-top: 200px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  
+}
+
+.banner p {
+  color: rgba(20, 31, 28, 0.768);
+  font-size: 25px;
+  
+}
+
+.explore-btn {
+  width: 95px;
+  padding: 8px 0;
+  outline: none !important;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background: transparent;
+  color: #fff;
+  float: right;
+  text-align: center;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+
+.explore-btn button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background-color: rgb(119, 26, 26);
+}
+
+.courses {
+  margin: 60px;
+  padding-bottom: 50px;
+}
+
+.courses h1 {
+  color: #16282a;
+  font-size: 33px;
+  text-align: center;
+}
+
+.course {
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  padding:20px 10px;
+  border: 1px solid #dedada;
+  text-align: center;
+  background-color: #cbc2c2eb;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
+.course h3 {
+  margin-bottom: 10px;
+}
+
+.course p {
+  color: #000000;
+}
+
+.course a {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.course {
+  transition: transform 0.2s;
+}
+
+.course:hover {
+  transform: scale(1.1);
+}
+
+.teachers {
+  margin: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.teachers h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+.teacher {
+  display: inline-block;
+  margin: 20px;
+  padding:  18px 20px;
+  border: 1px solid #dedada;
+  text-align: center;
+  background-color: #cbc2c2eb;
+}
+
+.teacher img {
+  width: 270px;
+  height: 270px;
+  object-fit:cover;
+  margin-bottom: 5px;
+}
+
+.teacher h3 {
+  margin-bottom: 10px;
+}
+
+.teacher p {
+  color: #000000;
+}
+.details p{
+  display: block;
+  font-size: 24px;
+  font-style: oblique;
+  font-feature-settings: "abvf";
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #a4a9ad;
+   
+}
+#mentorship {
+  background-color: #c4abab;
+  padding: 40px;
+  text-align: center;
+}
+
+#mentorship h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#mentorship p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.contact {
+  background-color: #cccfa6;
+  padding: 50px;
+}
+
+.contact h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact p {
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.contact-info i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+
+}
