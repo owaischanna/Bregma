@@ -26,11 +26,19 @@ nav {
 
 .head h1 {
   color: #000000cc;
-  font-size: 27px; /* Adjusted font size for better mobile responsiveness */
-  line-height: 50px; /* Adjusted line height */
+  font-size: 27px; /* Default font size */
+  line-height: 50px; /* Default line height */
   padding: 0;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 768px) {
+  .head h1 {
+    font-size: 20px; /* Adjusted font size for mobile */
+    line-height: 20px; /* Adjusted line height for mobile */
+  }
+}
+
 
 nav ul {
   display: flex;
@@ -105,6 +113,7 @@ a:hover {
 
   .checkbtn .fa-bars {
     display: block;
+    padding: 8px;
   }
 
   .checkbtn .fa-times {
@@ -155,7 +164,7 @@ a:hover {
 
 
 .courses {
-  margin: 60px;
+  margin: 20px;
   padding-bottom: 50px;
 }
 
@@ -219,7 +228,7 @@ a:hover {
 
 .teacher {
   display: inline-block;
-  margin: 20px;
+  margin: 5px;
   padding: 18px 20px;
   border: 1px solid #dedada;
   text-align: center;
@@ -230,7 +239,7 @@ a:hover {
   width: 270px;
   height: 270px;
   object-fit: cover;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 .teacher h3 {
@@ -247,7 +256,7 @@ a:hover {
   font-style: oblique;
   font-feature-settings: "abvf";
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #a4a9ad;
+  background-color: #bdc262;
 }
 
 #mentorship {
