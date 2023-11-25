@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
     <script src="index.js"></script>
   </head>
   <body>
@@ -14,8 +15,11 @@
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i> <!-- Close icon -->
       </label>
-       <div class="head"><h1>Bregma Academy and Quranics</h1></div>
+      <div class="head">
+        <h1>Bregma Academy and Quranics</h1>
+      </div>
       <ul class="menu">
         <li><a class="active" href="#Home">Home</a></li>
         <li><a class="#" href="#teachers">Teacher</a></li>
@@ -27,13 +31,14 @@
     <section class="banner">
       <p>Explore our wide range of courses and start your learning journey together</p>
       <div class="explore-btn">
-        <button class="button">Join Now</button>
+        <a href="enroll.html" class="button-link">
+        <button class="button-join">Join Now</button>
+        </a>
       </div>
     </section>
     
     <section id="courses" class="courses">
       <h1>Courses</h1>
-      
       <div class="course">
         <img src="images/eng.jpg">
         <h3>English Language</h3>
@@ -63,7 +68,7 @@
       </div>
     </section>
     <section id="teachers" class="teachers">
-      <h1>Meet the Teachers/Instructors</h1>
+      <h1>Meet the Teacher/Instructor</h1>
     
       <div class="teacher">
         <img src="images/abid.jpg">
@@ -88,13 +93,42 @@
       <div class="contact-details">
         <div class="contact-info">
           <i class="fas fa-envelope"></i>
-          <p>Email:  abidislamabad1@gmail.com</p>
+          <p>Email: abidislamabad1@gmail.com</p>
         </div>
         <div class="contact-info">
           <i class="fas fa-phone"></i>
           <p>Phone: +923125272003</p>
         </div>
       </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send us a message</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <h2>Connect with us on social media</h2>
+        <ul>
+          <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <!-- Add more social media icons as needed -->
+        </ul>
+      </div>
     </section>
+
   </body>
 </html>
